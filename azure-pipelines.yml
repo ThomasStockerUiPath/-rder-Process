@@ -17,7 +17,13 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'Orchestrator'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-    
+
+ - task: CmdLine@2
+   inputs:
+     script: |
+       dir
+       cd Output
+       dir
 
 - task: UiPathDeploy@2
   inputs:
