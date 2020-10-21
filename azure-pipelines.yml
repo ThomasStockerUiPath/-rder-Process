@@ -9,9 +9,6 @@ steps:
 - task: UiPathInstallPlatform-preview@2
 
 
-- task: CmdLine@2
-  inputs:
-    script: 'dir'
 
 - task: UiPathPack@2
   inputs:
@@ -20,4 +17,11 @@ steps:
     outputType: 'Process'
     orchestratorConnection: 'Orchestrator'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+    
+
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'Orchestrator'
+    packagesPath: 'Output'
+    folderName: 'ThomasStocker'
 
