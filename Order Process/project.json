@@ -39,17 +39,17 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "6c96af86-e8c5-48b6-89d1-4cd8a61c9471",
         "fileName": "No approval required.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "1bd2d446-437e-4160-932a-0f4b57888a3d",
         "fileName": "Order Approved.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "62bde88b-ad6c-4d10-8a08-f8e301f49456",
         "fileName": "Order Rejected.xaml"
       }
