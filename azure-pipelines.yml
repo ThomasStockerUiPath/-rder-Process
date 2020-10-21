@@ -8,3 +8,12 @@ pool:
 steps:
 - task: UiPathInstallPlatform-preview@2
 
+
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: '$(Build.ArtifactStagingDirectory)/Order Process/project.json'
+    outputType: 'Process'
+    orchestratorConnection: 'Orchestrator'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+
