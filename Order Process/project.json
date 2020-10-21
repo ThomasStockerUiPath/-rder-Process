@@ -6,6 +6,7 @@
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.Mail.Activities": "[1.9.3]",
     "UiPath.System.Activities": "[20.10.1]",
+    "UiPath.Testing.Activities": "[1.2.4]",
     "UiPath.UIAutomation.Activities": "[20.10.5]"
   },
   "webServices": [],
@@ -36,7 +37,23 @@
     "processOptions": {
       "ignoredFiles": []
     },
-    "fileInfoCollection": [],
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "6c96af86-e8c5-48b6-89d1-4cd8a61c9471",
+        "fileName": "No approval required.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "1bd2d446-437e-4160-932a-0f4b57888a3d",
+        "fileName": "Order Approved.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "62bde88b-ad6c-4d10-8a08-f8e301f49456",
+        "fileName": "Order Rejected.xaml"
+      }
+    ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
