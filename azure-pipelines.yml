@@ -1,8 +1,6 @@
-trigger: 
- branches:
-    include:
-      - master
-      - Development
+trigger:
+- master
+- releases/*
 
 pool:
 
