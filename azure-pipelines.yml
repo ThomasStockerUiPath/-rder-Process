@@ -16,7 +16,7 @@ steps:
     testProjectPath: 'Order Process/project.json'
     environment: 'ThomasStockerEnvironment'
     folderName: 'ThomasStocker'
-    testReportDestination: 'result.xml'
+    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output\result.xml'
 
 - task: UiPathPack@2
   inputs:
