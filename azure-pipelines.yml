@@ -19,22 +19,9 @@ steps:
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
-- task: CmdLine@2
-  inputs:
-    script: 'dir'
-
-- task: CmdLine@2
-  inputs:
-    script: 'cd Output'
-
-
-- task: CmdLine@2
-  inputs:
-    script: 'dir'
-
 - task: UiPathDeploy@2
   inputs:
     orchestratorConnection: 'Orchestrator'
-    packagesPath: 'Output'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'ThomasStocker'
 
