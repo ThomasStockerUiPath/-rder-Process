@@ -52,6 +52,21 @@
         "editingStatus": "Publishable",
         "testCaseId": "6a4b1a5b-a807-473d-97a0-fc5f55bc8ee1",
         "fileName": "Order Rejected.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "64bf1a8f-1bdc-45cb-8a9b-8f6fde16707a",
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "57909574-9dcd-4afe-a566-f1c7ab9f7073",
+        "fileName": "TestCase1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "12aa9195-4068-457c-9262-69a5907c56bb",
+        "fileName": "TestCase2.xaml"
       }
     ],
     "modernBehavior": false

@@ -1,0 +1,8 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Order Process_mock.xaml",
+      "sourceWorkflowPath": "Order Process.xaml"
+    }
+  ]
+}
