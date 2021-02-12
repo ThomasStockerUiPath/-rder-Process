@@ -41,22 +41,30 @@
       {
         "editingStatus": "Publishable",
         "testCaseId": "1f154ab8-cc92-477e-b48c-123363dd4a8d",
-        "fileName": "No approval required.xaml"
+        "fileName": "Test Cases\\End2End\\No approval required.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "858a7433-f235-4a8d-8a8d-a3d0fb2fe535",
-        "fileName": "Order Approved.xaml"
+        "fileName": "Test Cases\\End2End\\Order Approved.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "6a4b1a5b-a807-473d-97a0-fc5f55bc8ee1",
-        "fileName": "Order Rejected.xaml"
+        "fileName": "Test Cases\\End2End\\Order Rejected.xaml"
       }
     ],
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "c9dd2d94-0e2a-47b1-87dc-b32987f22faa",
+      "input": [],
+      "output": []
+    }
+  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {}
