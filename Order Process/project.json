@@ -63,6 +63,31 @@
         "testCaseId": "bb3d2789-4d09-4040-b761-d1f6a7d0689f",
         "dataVariationFilePath": ".variations\\products_products.json",
         "fileName": "Test Cases\\Unit Tests\\Test ProcessOrder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "856cb8e8-8eca-41cb-85ea-4684ba4fc931",
+        "fileName": "Test Cases\\Unit Tests\\Test CreateOrderInERP.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4bb17b81-2cbc-48b7-9cdc-70ca1d522701",
+        "fileName": "Test Cases\\Unit Tests\\Test EnterSalesDataIntoCRM.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9520cc31-2fb6-4ad0-a64c-73b9f850098b",
+        "fileName": "Test Cases\\Unit Tests\\Test FileOrder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b84f8433-bfb2-446e-bcd6-8602649f99ca",
+        "fileName": "Test Cases\\Unit Tests\\Test RejectOrder.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "70724717-84c4-4c5d-8b8f-354319faa249",
+        "fileName": "Test Cases\\Unit Tests\\Test UpdateCustomerData.xaml"
       }
     ],
     "modernBehavior": false
