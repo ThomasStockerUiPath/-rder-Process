@@ -2,7 +2,14 @@
   "issueKeyTestcaseValues": {
     "1f154ab8-cc92-477e-b48c-123363dd4a8d": "9f3cdabf-81c8-42fd-77d6-08d875ca65ea",
     "858a7433-f235-4a8d-8a8d-a3d0fb2fe535": "2108b15f-cf04-4575-77d7-08d875ca65ea",
-    "6a4b1a5b-a807-473d-97a0-fc5f55bc8ee1": "d3b5ac7f-6935-45a9-77d8-08d875ca65ea"
+    "6a4b1a5b-a807-473d-97a0-fc5f55bc8ee1": "d3b5ac7f-6935-45a9-77d8-08d875ca65ea",
+    "88183d3f-e796-45ed-967d-294beb400405": "01eb6d89-7b5e-4d49-43b9-08d8cf3edb3a",
+    "856cb8e8-8eca-41cb-85ea-4684ba4fc931": "c39d170f-4160-4a24-43ba-08d8cf3edb3a",
+    "4bb17b81-2cbc-48b7-9cdc-70ca1d522701": "1f7b2016-0551-4701-43bb-08d8cf3edb3a",
+    "9520cc31-2fb6-4ad0-a64c-73b9f850098b": "97140465-5932-4c70-43bc-08d8cf3edb3a",
+    "bb3d2789-4d09-4040-b761-d1f6a7d0689f": "2399a8f1-8074-4a6d-43bd-08d8cf3edb3a",
+    "b84f8433-bfb2-446e-bcd6-8602649f99ca": "cc944345-c0eb-4dcb-43be-08d8cf3edb3a",
+    "70724717-84c4-4c5d-8b8f-354319faa249": "5bde3711-88a8-4e04-43bf-08d8cf3edb3a"
   },
   "testManagerBasePath": "https://uipath-ts-demo-01.westeurope.cloudapp.azure.com:8443/",
   "defaultProject": {

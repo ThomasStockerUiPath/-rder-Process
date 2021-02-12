@@ -13,7 +13,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "20.10.0.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.1",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -93,14 +93,6 @@
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
-  "entryPoints": [
-    {
-      "filePath": "Main.xaml",
-      "uniqueId": "c9dd2d94-0e2a-47b1-87dc-b32987f22faa",
-      "input": [],
-      "output": []
-    }
-  ],
   "isTemplate": false,
   "templateProjectData": {},
   "publishData": {}
