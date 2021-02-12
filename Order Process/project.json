@@ -88,6 +88,22 @@
         "editingStatus": "Publishable",
         "testCaseId": "70724717-84c4-4c5d-8b8f-354319faa249",
         "fileName": "Test Cases\\Unit Tests\\Test UpdateCustomerData.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5ef33e52-39f1-4319-b23c-c433d3f077ce",
+        "fileName": "Process\\Workflows\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "372a9c2e-010a-4d8e-bc1f-3e2ab41ad0ce",
+        "dataVariationFilePath": ".variations\\products_products_1.json",
+        "fileName": "Process\\Workflows\\TestCase1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "78a336df-e01e-4ed5-8f06-db52689d5f7b",
+        "fileName": "Process\\TestCase.xaml"
       }
     ],
     "modernBehavior": false

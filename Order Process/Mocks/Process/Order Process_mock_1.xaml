@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Order_Process" this:Order_Process.order_amount="10000" this:Order_Process.approved="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Order_Process" this:Order_Process.order_amount="10000" this:Order_Process.approved="True" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:utam="clr-namespace:UiPath.Testing.Activities.Mocks;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="order_amount" Type="InArgument(x:Int32)" />
     <x:Property Name="approved" Type="InArgument(x:Boolean)" />
@@ -32,6 +32,9 @@
       <x:String>UiPath.Core</x:String>
       <x:String>UiPath.Core.Activities</x:String>
       <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.Testing.Activities.Mocks</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
@@ -63,6 +66,7 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="Order_Process" sap:VirtualizedContainerService.HintSize="1166,640" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -115,11 +119,23 @@
                   <av:PointCollection x:Key="ConnectorLocation">880,42.5 910.25,42.5 910.25,216.5</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke CreateorderinERP workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Process\Workflows\CreateorderinERP.xaml">
-                <ui:InvokeWorkflowFile.Arguments>
-                  <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                </ui:InvokeWorkflowFile.Arguments>
-              </ui:InvokeWorkflowFile>
+              <utam:MockActivity sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="MockActivity_1" MockedActivityIdRef="InvokeWorkflowFile_3">
+                <utam:MockActivity.MockedActivity>
+                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke CreateorderinERP workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Process\Workflows\CreateorderinERP.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                </utam:MockActivity.MockedActivity>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,183" sap2010:WorkflowViewState.IdRef="Sequence_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Mock invoked&quot;]" />
+                </Sequence>
+              </utam:MockActivity>
               <FlowStep.Next>
                 <FlowDecision x:Name="__ReferenceID3" Condition="[order_amount &gt; 10000]" DisplayName="Order amount" sap:VirtualizedContainerService.HintSize="81,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
                   <sap:WorkflowViewStateService.ViewState>
@@ -226,20 +242,5 @@
     <x:Reference>__ReferenceID5</x:Reference>
     <x:Reference>__ReferenceID6</x:Reference>
     <x:Reference>__ReferenceID7</x:Reference>
-    <FlowStep>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <av:Point x:Key="ShapeLocation">550,504.02</av:Point>
-          <av:Size x:Key="ShapeSize">200,51</av:Size>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;some change&quot;]">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-      </ui:LogMessage>
-    </FlowStep>
   </Flowchart>
 </Activity>

@@ -3,7 +3,7 @@
     <x:Property Name="OrderAmount" Type="InArgument(x:String)" />
     <x:Property Name="ProductType" Type="InArgument(x:String)" />
   </x:Members>
-  <sap:VirtualizedContainerService.HintSize>1073,1265</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1073,1658</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="32">
@@ -59,12 +59,15 @@
       <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Process Order" sap:VirtualizedContainerService.HintSize="376,1100" sap2010:WorkflowViewState.IdRef="Sequence_5">
+  <Sequence DisplayName="Process Order" sap:VirtualizedContainerService.HintSize="376,1493" sap2010:WorkflowViewState.IdRef="Sequence_5">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="Info" Message="[&quot;____________________________________________&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="Info" Message="[&quot;PROCESS ORDER&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;____________________________________________&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_12" Level="Info" Message="[&quot;create invoice&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_13" Level="Info" Message="[&quot;trigger order fullfillment&quot;]" />
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_14" Level="Info" Message="[&quot;wait for order fullfilment&quot;]" />
