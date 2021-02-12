@@ -1,15 +1,16 @@
-Shampoo
-Hairdryer
-Washing Machine
-Car
-Onions
-Bread
-Apple Juice
-Rice
-Beans
-Book
-Mobile Phone
-TV set
-Laptop
-Computer
-Tablet
+ProductType,OrderAmount
+Shampoo,1000
+Hairdryer,2000
+Washing Machine,500
+Car,2
+Onions,45476
+Bread,6
+Apple Juice,90
+Rice,1234
+Beans,567
+Book,789
+Mobile Phone,12
+TV set,5
+Laptop,987
+Computer,4
+Tablet,1
