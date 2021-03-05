@@ -14,8 +14,7 @@ steps:
     testTarget: 'TestProject'
     orchestratorConnection: 'Orchestrator'
     testProjectPath: 'Order Process/project.json'
-    environment: 'ThomasStockerEnvironment'
-    folderName: 'ThomasStocker'
+    folderName: 'ThomasStocker_modern_folder'
     testReportDestination: '$(Build.ArtifactStagingDirectory)\Output\result.xml'
 
 - task: UiPathPack@2
@@ -31,5 +30,5 @@ steps:
   inputs:
     orchestratorConnection: 'Orchestrator'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'ThomasStocker'
+    folderName: 'ThomasStocker_modern_folder'
 
