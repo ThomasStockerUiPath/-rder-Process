@@ -59,7 +59,7 @@
         "fileName": "Test Cases\\Unit Tests\\Test ApproveOrder.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "bb3d2789-4d09-4040-b761-d1f6a7d0689f",
         "dataVariationFilePath": ".variations\\products_products.json",
         "fileName": "Test Cases\\Unit Tests\\Test ProcessOrder.xaml"
@@ -109,7 +109,16 @@
     "modernBehavior": false
   },
   "expressionLanguage": "VisualBasic",
+  "entryPoints": [
+    {
+      "filePath": "Main.xaml",
+      "uniqueId": "5352c862-6475-47fa-a9be-c08eaf04504e",
+      "input": [],
+      "output": []
+    }
+  ],
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {}
+  "publishData": {},
+  "targetFramework": "Legacy"
 }
