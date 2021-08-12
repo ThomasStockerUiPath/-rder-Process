@@ -9,20 +9,10 @@ pool:
 steps:
 - task: UiPathInstallPlatform-preview@2
 
-
-- task: UiPathPack@2
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: 
-    outputType: 'Process'
-    orchestratorConnection: 'staging_default'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-
-
-- task: UiPathDeploy@2
+- task: UiPathAssets@2
   inputs:
     orchestratorConnection: 'staging_default'
-    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
     folderName: 'Thomas Stocker'
-    entryPoints: "Process\\Order Process.xaml"
-
+    assetActionType: 'Deploy'
+    csvFile: 'assets.csv'
+    traceLevel: 'Verbose'
