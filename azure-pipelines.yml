@@ -9,26 +9,20 @@ pool:
 steps:
 - task: UiPathInstallPlatform-preview@2
 
-- task: UiPathTest@2
-  inputs:
-    testTarget: 'TestProject'
-    orchestratorConnection: 'Orchestrator'
-    testProjectPath: 'Order Process/project.json'
-    folderName: 'ThomasStocker_modern_folder'
-    testReportDestination: '$(Build.ArtifactStagingDirectory)\Output\result.xml'
 
 - task: UiPathPack@2
   inputs:
     versionType: 'AutoVersion'
     projectJsonPath: 
     outputType: 'Process'
-    orchestratorConnection: 'Orchestrator'
+    orchestratorConnection: 'staging_default'
     outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
 
 - task: UiPathDeploy@2
   inputs:
-    orchestratorConnection: 'Orchestrator'
+    orchestratorConnection: 'staging_default'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'ThomasStocker_modern_folder'
+    folderName: 'Thomas Stocker'
+    entryPoints: "Process/Order Process.xaml"
 
