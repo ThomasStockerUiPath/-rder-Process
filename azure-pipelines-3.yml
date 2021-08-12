@@ -1,0 +1,18 @@
+trigger:
+- master
+- releases/*
+
+pool:
+
+  vmImage: "vs2017-win2016"
+
+steps:
+- task: UiPathInstallPlatform-preview@2
+
+- task: UiPathAssets@2
+  inputs:
+    orchestratorConnection: 'staging_default'
+    folderName: 'Thomas Stocker'
+    assetActionType: 'Deploy'
+    csvFile: 'assets.csv'
+    traceLevel: 'Verbose'
