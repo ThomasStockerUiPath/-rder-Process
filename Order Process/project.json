@@ -1,7 +1,7 @@
 {
   "name": "Order Process",
   "description": "Blank Process",
-  "main": "Main.xaml",
+  "main": "Process\\Order Process.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.9.3]",
     "UiPath.Mail.Activities": "[1.9.3]",
