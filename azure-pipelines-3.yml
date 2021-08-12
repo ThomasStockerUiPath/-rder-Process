@@ -9,6 +9,13 @@ pool:
 steps:
 - task: UiPathInstallPlatform-preview@2
 
+- task: CmdLine@2
+  inputs:
+    script: |
+      echo Write your commands here
+      dir
+      echo Hello world
+
 - task: UiPathAssets@2
   inputs:
     orchestratorConnection: 'staging_default'
