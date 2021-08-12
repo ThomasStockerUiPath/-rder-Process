@@ -1,4 +1,4 @@
-﻿name, type, value, description
-mytextAsset, text, hello world, this is my text asset
-myBooleanAsset, boolean, true,this is my boolean asset
-myCredentialAsset, credential, username : : password,these are my credentials
+name,type,value,description
+mytextAsset,text,hello world,this is my text asset
+myBooleanAsset,boolean,true,this is my boolean asset
+myCredentialAsset,credential,username::password,these are my credentials
