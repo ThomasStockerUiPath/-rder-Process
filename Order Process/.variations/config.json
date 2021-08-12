@@ -1,0 +1,12 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\products_products.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\products_products_1.json",
+      "dataVariationType": "File"
+    }
+  ]
+}

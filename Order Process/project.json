@@ -17,6 +17,7 @@
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
+    "isAttended": false,
     "requiresUserInteraction": true,
     "supportsPersistence": false,
     "excludedLoggedData": [
@@ -25,7 +26,8 @@
     ],
     "executionType": "Workflow",
     "readyForPiP": false,
-    "startsInPiP": false
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": false
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -102,7 +104,12 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "78a336df-e01e-4ed5-8f06-db52689d5f7b",
+        "testCaseId": "e1a8b1c3-94de-49bf-b32d-50ce591d05c3",
+        "fileName": "Process\\Order Process End2End Test Case.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "3094b2df-7ce5-42ef-a0d2-4a08a20e832c",
         "fileName": "Process\\TestCase.xaml"
       }
     ],
@@ -113,6 +120,12 @@
     {
       "filePath": "Main.xaml",
       "uniqueId": "5352c862-6475-47fa-a9be-c08eaf04504e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "Process\\Order Process.xaml",
+      "uniqueId": "40d09fa2-b94f-46d2-a021-a8f783f7bbd5",
       "input": [],
       "output": []
     }
