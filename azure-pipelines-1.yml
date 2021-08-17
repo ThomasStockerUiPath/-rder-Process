@@ -23,6 +23,6 @@ steps:
   inputs:
     orchestratorConnection: 'staging_default'
     packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
-    folderName: 'FolderFeed'
+    folderName: 'Thomas Stocker'
     
 
