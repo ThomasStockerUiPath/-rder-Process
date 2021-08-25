@@ -12,7 +12,7 @@ steps:
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'staging_default'
-    testSet: 'Attachments'
+    orchestratorConnection: 'staging.uipath.com'
+    testSet: 'OrderProcessTestSet'
     folderName: 'Thomas Stocker Modern Folder'
     traceLevel: Verbose
