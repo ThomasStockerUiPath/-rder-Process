@@ -12,6 +12,6 @@ steps:
 - task: UiPathTest@2
   inputs:
     testTarget: 'TestSet'
-    orchestratorConnection: 'staging.uipath.com'
+    orchestratorConnection: 'staging_default'
     testSet: 'OrderProcessTestSet'
     folderName: 'Thomas Stocker Modern Folder'
